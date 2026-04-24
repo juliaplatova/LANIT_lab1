@@ -8,6 +8,7 @@ def main(
 ):
     """
     Говорит "Привет" пользователю, опционально используя фамилию и формальный стиль.
+    Added to comment on [master]
     """
     if formal:
         print(f"Добрый день, {name} {lastname}!")
