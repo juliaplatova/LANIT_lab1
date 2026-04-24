@@ -4,7 +4,12 @@ def main(
     name: str,
     # Optional last name for formal greeting mode.
     lastname: str = typer.Option("", help="Фамилия пользователя."),
-    formal: bool = typer.Option(False, "--formal", "-f", help="Использовать формальное приветствие."),
+    formal: bool = typer.Option(
+        False,
+        "--formal",
+        "-f",
+        help="Использовать формальное приветствие.",
+    ),
 ):
     """
     Говорит "Привет" пользователю, опционально используя фамилию и формальный стиль.
